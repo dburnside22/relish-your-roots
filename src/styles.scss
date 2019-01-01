@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Libre+Baskerville|Open+Sans');
+
+$main-light: #FDE8E9;
+$secondary-light: #DBDBDB;
+$light-green: #849483;
+$dark-green: #132D09;
+$deep-purple: #460824;
+
+body{
+  // font-family: 'Libre Baskerville', serif;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: $secondary-light;
+}
