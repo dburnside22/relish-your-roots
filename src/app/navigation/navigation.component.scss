@@ -8,8 +8,9 @@ nav {
   color: $deep-purple;
   font-family: 'Libre Baskerville', serif;
   height: 90px;
- 
-
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 ul {
