@@ -1,4 +1,47 @@
+@import '../../styles.scss';
+
+nav {
+  display: grid;
+  grid-template-columns: 1.5fr 4.5fr;
+  grid-template-areas: "name links";
+  background-color: $main-light;
+  color: $deep-purple;
+  font-family: 'Libre Baskerville', serif;
+  height: 90px;
+ 
+
+}
+
 ul {
   list-style: none;
+   grid-area: links; 
+   margin: auto;
 }
+
+li {
+  font-size: 20px;
+  display: inline;
+  padding: 0px 32px;
+  border: none;
+  transition: padding .2s;
+  -webkit-transition: padding .2s;
+}
+
+li:hover {
+  padding: 5px 32px;
+  border-top: 4px white solid; 
+  border-bottom: 4px white solid; 
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  display: inline;
+  grid-area: name;
+  margin: 12px auto;
+  font-size: 50px;
+}
+
+
+
+
 
