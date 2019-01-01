@@ -3,10 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { RecipesComponent } from './recipes/recipes.component';
+import { HomeSchoolComponent } from './home-school/home-school.component';
+import { NonToxicComponent } from './non-toxic/non-toxic.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    RecipesComponent,
+    HomeSchoolComponent,
+    NonToxicComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
