@@ -1,3 +1,11 @@
-<p>
-  about works!
-</p>
+<div>
+  <h1>About Me</h1>
+
+  <div class="container">
+    <div class="about-me-box" *ngFor="let title of titles">
+        <h3>{{title.name}}</h3>
+        <span class="bar"></span>
+        <p>{{title.description}}</p>
+      </div>
+  </div>
+</div>

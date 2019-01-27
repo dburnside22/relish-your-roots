@@ -1,46 +1,118 @@
 @import '../../styles.scss';
 
-nav {
-  display: grid;
-  grid-template-columns: 1.5fr 4.5fr;
-  grid-template-areas: "name links";
-  background-color: $main-light;
-  color: $deep-purple;
-  font-family: 'Libre Baskerville', serif;
-  height: 90px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-}
-
-ul {
-  list-style: none;
-   grid-area: links; 
-   margin: auto;
-}
-
-li {
-  font-size: 20px;
-  display: inline;
-  padding: 0px 32px;
-  border: none;
-  transition: padding .2s;
-  -webkit-transition: padding .2s;
-}
-
-li:hover {
-  padding: 5px 32px;
-  border-top: 4px white solid; 
-  border-bottom: 4px white solid; 
-}
 
 h1 {
   font-family: 'Great Vibes', cursive;
   display: inline;
-  grid-area: name;
-  margin: 12px auto;
-  font-size: 50px;
+  margin: 12px 0;
+  font-size: 30px;
+  padding-left: 4px;
 }
+
+nav {
+  display: grid;
+  grid-template-columns: 3.5fr 4.5fr;
+  background-color: $main-light;
+  color: $deep-purple;
+  font-family: 'Libre Baskerville', serif;
+  min-height: 90px;
+  height: auto;
+  transition: height 1s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+  
+button div {
+  width: 35px;
+  height: 3px;
+  background-color: $deep-purple;
+  margin: 6px 0 6px auto;
+}
+button {
+  height: 25px;
+  margin: auto 0;
+}
+
+.desktop-navigation {
+  display: none;
+}
+
+ul {
+  grid-row: 2;
+  grid-column: 1 / 3;
+  list-style: none;
+}
+
+li {
+  font-size: 17px;
+  margin: 6px auto;
+  animation: fadeIn 1s;
+}
+
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+} 
+
+
+@media screen and (min-width: 800px){
+  button{
+    display: none;
+  }
+
+  .mobile-navigation {
+    display: none;
+  }
+
+  .desktop-navigation {
+    display: block;
+    grid-row: 1;
+    grid-column: 2;
+    text-align: end;
+    margin: auto 0px;
+  }
+
+  h1{
+    font-size: 45px;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: 1.5fr 4.5fr;
+    background-color: $main-light;
+    color: $deep-purple;
+    font-family: 'Libre Baskerville', serif;
+    min-height: 90px;
+    height: auto;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  
+  li {
+    font-size: 20px;
+    display: inline;
+    padding: 0px 2%;
+    border: none;
+    transition: padding .2s;
+    -webkit-transition: padding .2s;
+  }
+  
+  li:hover {
+    padding: 5px 32px;
+    border-top: 4px white solid; 
+    border-bottom: 4px white solid; 
+  }
+  
+  
+
+}
+
+
+
+
 
 
 

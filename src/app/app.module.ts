@@ -9,6 +9,7 @@ import { RecipesComponent } from './recipes/recipes.component';
 import { HomeSchoolComponent } from './home-school/home-school.component';
 import { NonToxicComponent } from './non-toxic/non-toxic.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { RecipeBoxesComponent } from './recipe-boxes/recipe-boxes.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     RecipesComponent,
     HomeSchoolComponent,
     NonToxicComponent,
-    NavigationComponent
+    NavigationComponent,
+    RecipeBoxesComponent
   ],
   imports: [
     BrowserModule,

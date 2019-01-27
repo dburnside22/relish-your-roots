@@ -1,11 +1,23 @@
 
 <nav>
-  <h1>Olivia Danae</h1>
-  <ul>
-  <li>Home</li>
-  <li>About</li>
-  <li>Recipes</li>
-  <li>Home School</li>
-  <li>Non Toxic</li>
+  <h1>Relish Your <br>Roots</h1>
+  <ul class="desktop-navigation">
+    <li>Home</li>
+    <li>About</li>
+    <li>Recipes</li>
+    <li>Home School</li>
+    <li>Non Toxic</li>
+  </ul>
+  <button (click)="showNavigation = !showNavigation">
+    <div></div>
+    <div></div>
+    <div></div>
+  </button>
+  <ul class="mobile-navigation" *ngIf='showNavigation'>
+    <li>Home</li>
+    <li>About</li>
+    <li>Recipes</li>
+    <li>Home School</li>
+    <li>Non Toxic</li>
   </ul>
 </nav>
