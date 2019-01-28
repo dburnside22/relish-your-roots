@@ -1,0 +1,26 @@
+@import '../../styles.scss';
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: white;
+}
+
+.center {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.button{
+  grid-column: 2 / 3;
+  button {
+    height: 50px;
+    width: 200px;
+    background-color: $deep-purple;
+    color:white;
+    font-size: 20px;
+    border-radius: 12px;
+  }
+  margin: 30px;
+}
