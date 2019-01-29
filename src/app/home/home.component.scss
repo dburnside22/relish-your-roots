@@ -1,3 +1,5 @@
+@import '../../styles.scss';
+
 .image-box{
   width: 100%;
   height: auto;
@@ -6,3 +8,27 @@
 section {
   min-height: 60vh;
 }
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  margin-top: 10%;
+  font-size: 45px;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Great Vibes', cursive;
+  text-align: end;
+  font-size: 25px;
+  margin-right: 30%;
+}
+
+  button {
+    height: 50px;
+    width: 200px;
+    background-color: $deep-purple;
+    color:white;
+    font-size: 20px;
+    border-radius: 12px;
+    margin: 30px;
+  }
