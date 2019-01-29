@@ -10,6 +10,7 @@ import { HomeSchoolComponent } from './home-school/home-school.component';
 import { NonToxicComponent } from './non-toxic/non-toxic.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { RecipeBoxesComponent } from './recipe-boxes/recipe-boxes.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RecipeBoxesComponent } from './recipe-boxes/recipe-boxes.component';
     HomeSchoolComponent,
     NonToxicComponent,
     NavigationComponent,
-    RecipeBoxesComponent
+    RecipeBoxesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
