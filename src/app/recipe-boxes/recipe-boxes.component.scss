@@ -7,12 +7,24 @@
   background-color: white;
 }
 
+.recipe-box {
+  grid-column: 1 / -1;
+  display: grid;
+}
+
+img {
+  width: 80%;
+  min-width: 250px;
+  height: auto;
+}
+
 .center {
   text-align: center;
-  margin-top: 30px;
+  // margin-top: 30px;
 }
 
 .button{
+  grid-row: 2;
   grid-column: 2 / 3;
   button {
     height: 50px;
@@ -23,4 +35,16 @@
     border-radius: 12px;
   }
   margin: 30px;
+}
+
+@media screen and (min-width: 800px) {
+  .recipe-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .recipe-box {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
